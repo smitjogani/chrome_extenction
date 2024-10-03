@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WhatsApp Translator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 60px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    select {
+      margin-top: 10px;
+      width: 100%;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h3>WhatsApp Message Translator</h3>
+  
+  <label for="message-input">Enter Message:</label>
+  <textarea id="message-input" placeholder="Enter your message"></textarea>
+  
+  <label for="language-selector">Select Language:</label>
+  <select id="language-selector">
+    <option value="es">Spanish</option>
+    <option value="fr">French</option>
+    <option value="de">German</option>
+    <option value="it">Italian</option>
+    <option value="zh">Chinese</option>
+  </select>
+  
+  <button id="translate-button">Translate Message</button>
+
+  <h4>Translated Message:</h4>
+  <p id="translated-message"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
